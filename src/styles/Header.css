@@ -1,0 +1,22 @@
+.Header {
+    position: relative;
+    top:-70px;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.671);
+    border-bottom: 1px solid rgba(214, 214, 214, 0.753);
+    /* animation: down 1s infinite; */
+}
+
+.Header:hover {
+    animation: down 1s forwards;
+    animation-direction: alternate;
+}
+
+@keyframes down {
+    from {
+      top: -70px; 
+    }
+    to {
+      top: 0px;
+    }
+  }

@@ -1,28 +1,112 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+a{
+  text-decoration: none;
+  color: rgb(226, 169, 11);
+}
+
+.app_container{
+  position: relative;
+  padding: 0 300px;
+}
+
 .App {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url('./images/homebkgrnd.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; 
+  font-size: 2em;
+  color: rgb(255, 248, 227);
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 400;
+}
+
+#title {
+  position: relative;
+  font-size: 1.8em;
+  font-weight: 800;
+  color: rgb(255, 253, 241);
+  max-width: 50%;
   text-align: center;
+  margin: 10% 0 2% 25%;
+  text-shadow: 0 0 2px rgb(0, 0, 0), 0 0 17px rgb(255, 255, 227);
+  animation: fromtop 3s 1;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+#title_sub {
+  position: relative;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 8%;
+  text-shadow: 0 0 10px rgb(34, 34, 34);
+  animation: fromleft 3s 1;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.home_lower {
+  height: 50vh;
+  background-color: rgba(0, 0, 0, 0.671);
+  border-top: 1px solid rgba(214, 214, 214, 0.753);
 }
 
-.App-title {
-  font-size: 1.5em;
+.menu {
+  padding: 20px 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border-bottom: 1px solid rgba(214, 214, 214, 0.753);
+  text-shadow: 0 0 2px rgb(0, 0, 0), 0 0 17px rgb(255, 255, 227);
 }
 
-.App-intro {
-  font-size: large;
+footer{
+  position: relative;
+  bottom: 0px;
+  background-color: rgb(29, 29, 29);
+  height: 60px;
+  width: 100%;
+
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+
+/******************************************** animations  ******************************** */
+
+@keyframes fromtop {
+  from {
+    top: -200px; 
+    opacity: .1;
+  }
+  to {
+    top: 0px;
+    opacity: 1;
+  }
+}
+@keyframes fromleft {
+  from {
+    left: -500px; 
+    opacity: .1;
+  }
+  to {
+    left: 0px;
+    opacity: 1;
+  }
 }
