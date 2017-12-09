@@ -64,8 +64,12 @@ a{
 
 .home_lower {
   height: 50vh;
+  opacity: 0;
   background-color: rgba(0, 0, 0, 0.671);
   border-top: 1px solid rgba(214, 214, 214, 0.753);
+  animation: frombottom 3s 1;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
 }
 
 .menu {
@@ -76,6 +80,10 @@ a{
   justify-content: space-around;
   border-bottom: 1px solid rgba(214, 214, 214, 0.753);
   text-shadow: 0 0 2px rgb(0, 0, 0), 0 0 17px rgb(255, 255, 227);
+}
+
+.menu a:hover li{
+  color: rgb(250, 250, 204);
 }
 
 footer{
@@ -107,6 +115,16 @@ footer{
   }
   to {
     left: 0px;
+    opacity: 1;
+  }
+}
+@keyframes frombottom {
+  from {
+    bottom: -300px; 
+    opacity: .1;
+  }
+  to {
+    bottom: 0px;
     opacity: 1;
   }
 }

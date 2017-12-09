@@ -14,7 +14,7 @@ class App extends Component {
             <div>
               <ul className='menu'>
                 <a href='#'><li>OUR TEAM</li></a>
-                <a href='#'><li>PROMOTIONS</li></a>
+                <a href='#'><li>TESTIMONIALS</li></a>
                 <a href='#'><li>NEWS</li></a>
                 <a href='#'><li>CONTACT US</li></a>
               </ul>
