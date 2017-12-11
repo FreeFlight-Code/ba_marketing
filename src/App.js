@@ -22,7 +22,11 @@ class App extends Component {
           </div>
         </div>
           <footer>
-
+            <ul>
+              <li>exclusivetmp@gmail.com</li>
+              <li>all rights reserved copyright 2017</li>
+              <li>Fischer Web Design</li>
+            </ul>
           </footer>
       </div>
     );

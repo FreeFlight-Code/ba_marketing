@@ -92,7 +92,10 @@ footer{
   background-color: rgb(29, 29, 29);
   height: 60px;
   width: 100%;
+}
 
+footer>ul>li {
+  font-size: .5em;
 }
 
 
