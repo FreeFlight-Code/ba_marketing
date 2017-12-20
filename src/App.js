@@ -16,7 +16,7 @@ class App extends Component {
                 <a href='#'><li>OUR TEAM</li></a>
                 <a href='#'><li>TESTIMONIALS</li></a>
                 <a href='#'><li>NEWS</li></a>
-                <a href='#'><li>CONTACT US</li></a>
+                <a href='#'><li>SOCIAL MEDIA</li></a>
               </ul>
             </div>
           </div>
